@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
 
     <header class="header header-2 sticky-active">
@@ -107,98 +109,57 @@
         </div>
         <div class="container">
             <div class="page-header-content">
-                <h1 class="title">Cart Page</h1>
-                <h4 class="sub-title"><a class="home" href="index.html">Home </a><span class="icon">/</span><a
-                        class="inner-page" href="cart.html">Cart Page</a></h4>
+                <h1 class="title">Register Page</h1>
+                <h4 class="sub-title">
+                    <a class="home" href="index.html">Home </a><span class="icon">/</span>
+                    <a class="inner-page" href="register.html">Register</a>
+                </h4>
             </div>
         </div>
     </section>
 
 
-    <section class="cart-section pt-130 pb-130">
+    <section class="pt-100 pb-100">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="table-content cart-table">
-                        <table class="table mb-0">
-                            <thead>
-                                <tr>
-                                    <th class="product-remove"></th>
-                                    <th class="cart-product-name text-center">Products</th>
-                                    <th class="product-price"> Price</th>
-                                    <th class="product-quantity">Quantity</th>
-                                    <th class="product-subtotal">Subtotal</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="product-remove"><button><i
-                                                class="fa-sharp fa-regular fa-xmark"></i></button></td>
-                                    <td class="product-thumbnail">
-                                        <a href="shop-details.html">
-                                            <img src="assets/img/shop/shop-1.png" alt="img">
-                                        </a>
-                                        <div class="product-thumbnail">
-                                            <h4 class="title">Power Guard Fortress</h4>
-                                        </div>
-                                    </td>
-                                    <td class="product-price"><span class="amount">$550.00</span></td>
-                                    <td class="product-quantity">
-                                        <div class="quantity__group">
-                                            <input type="number" class="input-text qty text" name="quantity" value="1"
-                                                min="1" max="100" step="1" autocomplete="off">
-                                        </div>
-                                    </td>
-                                    <td class="product-subtotal"><span class="amount">$230.50</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="product-remove"><button><i
-                                                class="fa-sharp fa-regular fa-xmark"></i></button></td>
-                                    <td class="product-thumbnail">
-                                        <a href="shop-details.html">
-                                            <img src="assets/img/shop/shop-2.png" alt="img">
-                                        </a>
-                                        <div class="product-thumbnail">
-                                            <h4 class="title">Quantum Sound Enigma</h4>
-                                        </div>
-                                    </td>
-                                    <td class="product-price"><span class="amount">$550.00</span></td>
-                                    <td class="product-quantity">
-                                        <div class="quantity__group">
-                                            <input type="number" class="input-text qty text" name="quantity" value="1"
-                                                min="1" max="100" step="1" autocomplete="off">
-                                        </div>
-                                    </td>
-                                    <td class="product-subtotal"><span class="amount">$230.50</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="cart-btn-wrap">
-                        <div class="left-item">
-                            <input type="text" class="form-control" placeholder="Coupon Code">
-                            <button class="ed-primary-btn">Apply Coupon</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="checkout-wrapper">
-                        <div class="checkout-top checkout-item item-1">
-                            <h4 class="title">Cart Totals</h4>
-                        </div>
-                        <div class="checkout-total checkout-item">
-                            <h4 class="title">Total</h4>
-                            <span>$724</span>
-                        </div>
-                    </div>
-                    <div class="checkout-proceed">
-                        <a href="checkout.html" class="ed-primary-btn checkout-btn">Proceed to Checkout</a>
+                    <div class="login-container"
+                        style="padding: 40px; background: white; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); text-align: center;">
+                        <h2 class="mb-4" style="color: #07A698; font-weight: bold;">Welcome to Register</h2>
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <input type="text" id="fullname" name="fullname" class="form-control"
+                                    placeholder="Name"
+                                    style="border-radius: 30px; padding: 15px; border: 1px solid #07A698;">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Email"
+                                    style="border-radius: 30px; padding: 15px; border: 1px solid #07A698;">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="username" name="username" class="form-control"
+                                    placeholder="Username"
+                                    style="border-radius: 30px; padding: 15px; border: 1px solid #07A698;">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" id="password" name="password" class="form-control"
+                                    placeholder="Password"
+                                    style="border-radius: 30px; padding: 15px; border: 1px solid #07A698;">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" id="confirm-password" name="confirm-password"
+                                    class="form-control" placeholder="Confirm password"
+                                    style="border-radius: 30px; padding: 15px; border: 1px solid #07A698;">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100"
+                                style="background-color: #07A698; border: none; border-radius: 30px; padding: 15px; font-size: 18px; font-weight: bold;">Register</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <footer class="footer-section pt-120" data-background="assets/img/bg-img/footer-bg.png">
         <div class="footer-top-wrap">
